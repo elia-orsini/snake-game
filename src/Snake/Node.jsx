@@ -22,7 +22,7 @@ export default class Node extends React.Component{
                 <div
                 id={`node-${row}-${col}`}
                 className={`node ${extraClassName}`}
-                onClick = {() => this.props.click() }>
+                onClick = {() => this.props.click() }
                 tabIndex = "0" 
                 onKeyDown = {(e) => this.props.keyDown(e) }>
                 </div>
