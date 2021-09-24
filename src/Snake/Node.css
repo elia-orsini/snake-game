@@ -1,0 +1,63 @@
+body{
+  background-color: black;
+}
+
+.node {
+    width: 0.1px;
+    height: 0.1px;
+    display: table;
+    padding: 3px 8px 12px;
+    margin-left: 4px;
+    outline: 1px solid #007562bd;
+    display: inline-block;
+  }
+
+@keyframes visitedAnimation {
+  0% {
+    transform: scale(1);
+    box-shadow: 0px 0px 10px 1px rgba(133, 252, 22, 0.753);
+    background-color: rgba(133, 252, 22, 0.753);
+  }
+
+
+  50% {
+    box-shadow: 0px 0px 10px 1px rgba(216, 212, 0, 0.877);
+    background-color: rgba(216, 212, 0, 0.877);
+  }
+
+  75% {
+    box-shadow: 0px 0px 10px 1px rgba(6, 181, 194, 0.753);
+    background-color: rgba(6, 181, 194, 0.753);
+  }
+
+  100% {
+    box-shadow: 0px 0px 10px 1px rgba(210, 255, 7, 0.75);
+    background-color: rgba(210, 255, 7, 0.75);
+  }
+}
+  
+.yes-snake {
+  animation-name: visitedAnimation;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 10;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+  
+.food{
+  background-color: rgb(255, 0, 0);
+}
+
+.node-visited {
+  animation-name: visitedAnimation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
